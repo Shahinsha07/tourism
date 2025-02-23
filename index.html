@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .carousel-item {
+            position: relative;
+            height: 100vh;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        .carousel-caption {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .navbar {
+            background: black ;
+        }
+        .about-section {
+            padding: 150px 0;
+            background-color: #f8f9fa;
+        }
+        .about-section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .services-section img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+        }
+        .services-section {
+            padding: 150px 0;
+            
+        }
+        .testimonials-section {
+            padding: 150px 0;
+            background-color: #f8f9fa;
+        }
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .footer {
+            margin-top: 10px;
+            background: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ExpeditionX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/old-woman-celebrating-world-photography-day.jpg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption">
+                        <h1>Discover Breathtaking Destinations</h1>
+                        <p>Explore the beauty of the world with us.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/timelapse-shot-light-trails-around-arc-de-triomphe-paris-france.jpg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption">
+                        <h1>Discover Breathtaking Destinations</h1>
+                        <p>Make unforgettable memories with our travel packages.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/sunset-ancient-ruins-reflecting-tranquil-water-spiritual-scene-generated-by-artificial-intelligence.jpg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption">
+                        <h1>Discover Breathtaking Destinations</h1>
+                        <p>Explore the beauty of the world with us.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="about" class="about-section ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="assets/images/5828684.jpg" alt="About Our Travel Package">
+                </div>
+                <div class="col-lg-6">
+                    <h2>About Our Travel Packages</h2>
+                    <p>We offer a variety of travel packages tailored to your needs. Whether you seek adventure, relaxation, or cultural experiences, our packages ensure a seamless and unforgettable journey. Explore stunning destinations with expert guidance and premium services.</p>
+                    <p>Our team is dedicated to providing exceptional experiences, ensuring every trip is a memorable one. Join us and start your adventure today!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section mt-5">
+        <div class="container text-center">
+            <h2>Our Services</h2>
+            <p>Explore our range of top-notch travel services.</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/images/5572660.jpg" alt="Guided Tours">
+                    <h4>Guided Tours</h4>
+                    <p>Experience amazing destinations with expert guides.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/images/hotel_v_05.jpg" alt="Hotel Bookings">
+                    <h4>Hotel Bookings</h4>
+                    <p>Stay in the best hotels at unbeatable prices.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/images/8lgv_0o3w_230421.jpg" alt="Adventure Trips">
+                    <h4>Adventure Trips</h4>
+                    <p>Thrilling experiences tailored for adventure seekers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section  mt-5">
+        <div class="container text-center">
+            <h2>Testimonials</h2>
+            <p>What our customers say about us</p>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="assets/images/d95344a2-58b1-4db6-a429-fa9c0eb70147.jpg" alt="Sarah Johnson">
+                        <p>"The best travel experience I've ever had! Everything was well-organized and stress-free."</p>
+                        <h5>- Sarah Johnson</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="assets/images/9079845.jpg" alt="Mark Williams">
+                        <p>"A fantastic trip! The guides were knowledgeable, and the service was top-notch."</p>
+                        <h5>- Mark Williams</h5>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="testimonial-card">
+                        <img src="assets/images/d95344a2-58b1-4db6-a429-fa9c0eb70147.jpg" alt="Emily Davis">
+                        <p>"Highly recommended! I had an amazing time exploring new places with great company."</p>
+                        <h5>- Emily Davis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section  mt-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for your travel needs.</p>
+            <form class="w-50 mx-auto">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tourist Guide. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
